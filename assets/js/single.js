@@ -64,8 +64,8 @@ var displayWarning = function(repo) {
 
     var linkEl = document.createElement("a");
     linkEl.textContent = "See more Issues on GitHub.com";
-    linkEl.setAttritube("href", "https://github.com/" + repo + "/issues");
-    linkEl.setAttritube("target", "_blank");
+    linkEl.setAttribute("href", "https://github.com/" + repo + "/issues");
+    linkEl.setAttribute("target", "_blank");
 
     //append to warning container
     limitWarningEl.appendChild(linkEl);
